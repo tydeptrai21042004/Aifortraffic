@@ -1,0 +1,11 @@
+conda activate bert_bilstm_crf
+cd C:\Users\18521\Dynamic-Traffic-light-management-system
+cd C:\Users\18521\Dynamic-Traffic-light-management-system\maps
+python randomTrips.py -n chuanchi.net.xml -r chuanchi.rou.xml -e 500
+cd .. 
+python pre.py --train -e 2 -m model_name -s 500
+cd C:\Users\18521\Dynamic-Traffic-light-management-system\maps
+python randomTrips.py -n chuanchi.net.xml -r chuanchi.rou.xml -e 500
+cd .. 
+python train.py --train -e 2 -m model_name -s 500
+

@@ -1,0 +1,5 @@
+chạy pre trước để train ra model xong thay file trip để tiếp tục train online 
+step là trong sumo nó cần chia ra time để update data 500 step tức 500 lần update dữ liệu trong khuôn khổ file map 200 time 
+tức 1 step = 200/500 
+
+
